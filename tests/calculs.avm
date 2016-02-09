@@ -1,0 +1,118 @@
+; -------------
+; calculs.avm -
+; -------------
+
+;Test addition
+	;Addition entiers
+		debug "Addition entiers positifs : "
+		debug "Calcul : 1000000 + 1234567"
+		push int32(1000000)
+		push int32(1234567)
+		add
+		dump
+		pop
+
+		debug "Addition entiers mixtes"
+		debug "Calcul : 1000000 + -1234567"
+		push int32(1000000)
+		push int32(-1234567)
+		add
+		dump
+		pop
+
+	;Addition decimaux
+		debug "Addition decimaux"
+		debug "Float type : "
+		debug "Calcul : -50.879 + -32.311"
+		push float(-50.879)
+		push float(-32.311)
+		add
+		dump
+		pop
+
+		debug "Double type : "
+		debug "Calcul : 15.27 + 4.73"
+		push double(15.27)
+		push double(4.73)
+		add
+		dump
+		pop
+
+;Test soustraction
+	;Soustraction entiers
+		debug "Soustraction entiers"
+		debug "Calcul : 10 - 5"
+		push int8(-10)
+		push int8(5)
+		sub
+		dump
+		pop
+
+	;Soustraction decimaux
+		debug "Soustraction decimaux"
+		debug "Calcul : -15.3 - -3.5"
+		push float(-15.3)
+		push float(-3.5)
+		sub
+		dump
+		pop
+
+
+;Test multiplication
+	;Multiplication entiers mixtes
+		debug "Multiplication entiers mixtes"
+		debug "Calcul : 10 * -10"
+		push int8(10)
+		push int8(-10)
+		mul
+		dump
+		pop
+
+	;Multiplication decimaux
+		debug "Multiplication decimaux"
+		debug "Calcul : 1024 * 12.12"
+		push double(1024.0)
+		push float(12.12)
+		mul
+		dump
+		pop
+
+;Test division
+	;Division entiers
+		debug "Division entiers"
+		debug "Calcul : 50 / 4"
+		push int8(50)
+		push int8(4)
+		div
+		dump
+		pop
+
+	;Division decimaux
+		debug "Division decimaux"
+		debug "Calcul : 50 / 4"
+		push double(50)
+		push double(4)
+		div
+		dump
+		pop
+
+;Test division
+	;Modulo entiers
+		debug "Modulo entiers"
+		debug "Calcul : 50 / 4"
+		push int8(50)
+		push int8(4)
+		mod
+		dump
+		pop
+
+	;Modulo decimaux
+		debug "Modulo decimaux"
+		debug "Calcul : 50 / 4"
+		push double(50)
+		push double(4)
+		mod
+		dump
+		pop
+
+exit

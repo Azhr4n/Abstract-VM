@@ -1,0 +1,25 @@
+; ----------------
+; exceptions.avm -
+; ----------------
+
+;Instruction unknown
+	;test
+
+;Pop on empty stack
+	;pop
+
+;Div or mod by 0
+	;push int8(5)
+	;push int8(0)
+	;div
+	;mod
+
+;Assert false
+	;push int8(4)
+	;assert int8(5)
+
+;Not enough value
+	;push int8(5)
+	;add
+
+exit

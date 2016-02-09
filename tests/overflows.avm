@@ -1,0 +1,72 @@
+; ----------------
+; overflows.avm  -
+; ----------------
+
+;Test overflow ints
+	;Addition
+		;debug "Overflow int8"
+		;push int8(127)
+		;push int8(22)
+		;add
+
+		;debug "Overflow int16"
+		;push int16(32767)
+		;push int16(22)
+		;add
+
+		;debug "Overflow int32"
+		;push int32(2000000000)
+		;push int32(2000000000)
+		;add
+
+	;Multiplication
+		;debug "Overflow int8"
+		;push int8(127)
+		;push int8(22)
+		;mul
+
+		;debug "Overflow int16"
+		;push int16(32767)
+		;push int16(22)
+		;mul
+
+		;debug "Overflow int32"
+		;push int32(2000000000)
+		;push int32(2000000000)
+		;mul
+
+;Test underflow ints
+	;Addition
+		;debug "Underflow int8"
+		;push int8(-128)
+		;push int8(22)
+		;sub
+
+		;debug "Underflow int16"
+		;push int16(-32768)
+		;push int16(22)
+		;sub
+
+		;debug "Underflow int32"
+		;push int32(-2000000000)
+		;push int32(2000000000)
+		;sub
+
+	;Multiplication
+		;Test underflow ints
+		;debug "Underflow int8"
+		;push int8(-128)
+		;push int8(22)
+		;mul
+
+		;debug "Underflow int16"
+		;push int16(-32768)
+		;push int16(22)
+		;mul
+
+		;debug "Underflow int32"
+		;push int32(-2000000000)
+		;push int32(2000000000)
+		;mul
+
+exit
